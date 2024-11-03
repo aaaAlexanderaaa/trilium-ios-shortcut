@@ -2,6 +2,15 @@
 
 一个使用快捷指令给 trilium 发消息的指南
 
+This repo is forked from [soulsands/trilium-ios-shortcut](https://github.com/soulsands/trilium-ios-shortcut).
+
+我改了点[handler.js](./handler.js)的代码让这个handler可以在 [TriliumNext](https://github.com/TriliumNext/Notes/) 正常上传图片，没有修改任何其他地方。
+ 1. 不用 `require("module")` 而是用 `await import("module")`
+ 2. 函数调用方式也改了 `modulename.default.function();`
+ 3. TriliumNext里的函数名现在是 `importNotesToBranch` 而不是 `importToBranch`. 
+
+BTW, 我没有 js 相关的开发经验，这些调整基于 GitHub Copilot 和 [issues-433](https://github.com/TriliumNext/Notes/issues/433).
+
 ## 前置条件
 
 要使用这个指南，你需要：

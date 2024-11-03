@@ -4,6 +4,18 @@
 
 A Guide to Sending Messages to Trilium via Apple Shortcuts
 
+This repo is forked from [soulsands/trilium-ios-shortcut](https://github.com/soulsands/trilium-ios-shortcut).
+
+I made some adjustments to make it adapt to [TriliumNext](https://github.com/TriliumNext/Notes/) that can upload image to trilium.
+ 1. Instead of require("module") we can use await import("module")
+ 2. The function call using modulename.default.function();
+ 3. Using `importNotesToBranch` instead of `importToBranch`. 
+
+BTW, I have no dev exp related to js, the adjustments based on GitHub Copilot and [issues-433](https://github.com/TriliumNext/Notes/issues/433).
+
+
+
+
 ## Prerequisites
 
 To use this guide, you will need:
